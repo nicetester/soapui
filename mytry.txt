@@ -3,3 +3,7 @@
 3,run command:
   mvn install -Dmaven.test.skip -e -X> buildlog.log
   then all will success(except "SoapUI system test")
+4,run command to open this software at path "...souapui\soapui"(in soapui model)<must third step was success>: 
+  mvn exec:java  
+  4.1:then the window will be opened
+5.
