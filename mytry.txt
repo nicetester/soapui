@@ -1,0 +1,5 @@
+1,change to jdk1.7(have commited)
+2,change jfxrt to local path(have commited)
+3,run command:
+  mvn install -Dmaven.test.skip -e -X> buildlog.log
+  then all will success(except "SoapUI system test")
