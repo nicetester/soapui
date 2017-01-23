@@ -1,0 +1,12 @@
+1,change to jdk1.7(have commited)
+2,change jfxrt to local path(have commited)
+3,modify(line 193:add "final"):
+    _rootpath_\soapui\src\main\java\com\eviware\soapui\actions\SoapUIPreferencesAction.java
+    final JList prefItems = new JList(prefsListModel);
+4,run command:
+  mvn install -Dmaven.test.skip -e -X> buildlog.log
+  then all will success(except "SoapUI system test")
+5,run command to open this software at path "...souapui\soapui"(in soapui submodule)<must third step was success>: 
+  mvn exec:java  
+  4.1:then the window will be opened
+6.

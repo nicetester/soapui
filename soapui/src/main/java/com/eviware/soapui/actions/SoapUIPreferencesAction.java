@@ -190,7 +190,7 @@ public class SoapUIPreferencesAction extends AbstractAction implements SoapUIFac
         dialog.setSize(new Dimension(1000, 700));
 
         prefsListModel = new DefaultListModel<String>();
-        JList prefItems = new JList(prefsListModel);
+        final JList prefItems = new JList(prefsListModel);
         prefItems.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         prefsPanel = new JPanel(new CardLayout());
 
